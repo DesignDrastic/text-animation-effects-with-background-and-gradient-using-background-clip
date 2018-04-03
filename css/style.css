@@ -1,0 +1,133 @@
+.title {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-size: 70px;
+	font-weight: 900;
+	color: transparent;
+}
+.gray-bg {
+	background: #1c1c1c;
+}
+.box {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px solid #ccc;
+}
+
+.box.gradient-bg {
+	display: inline-block;
+	background: -webkit-linear-gradient(left, #EB3535 0%, #FBBC05 50%, #34A853 100%);
+	background: -o-linear-gradient(left, #EB3535 0%, #FBBC05 50%, #34A853 100%);
+	background: linear-gradient(to right, #EB3535 0%, #FBBC05 50%, #34A853 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.box.moving-gradient-block {
+	background: -webkit-linear-gradient(left, #EB3535 0%, #4285F4 50%, #EB3535 100%);
+	background: -o-linear-gradient(left, #EB3535 0%, #4285F4 50%, #EB3535 100%);
+	background: linear-gradient(to right, #EB3535 0%, #4285F4 50%, #EB3535 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-size: 200% auto;
+	-webkit-animation: animateBg 7.5s infinite linear;
+	animation: animateBg 7.5s infinite linear;
+}
+.box.moving-gradient-block.fast {
+	background-position: 0;
+	background-size: 150px;
+	animation-timing-function: linear;
+}
+@keyframes animateBg {
+	100% {
+		background-position: 200%;
+	}
+}
+@-webkit-keyframes animateBg {
+	100% {
+		background-position: 200%;
+	}
+}
+.box.moving-gradient-block .title {
+	padding: 50px 20px;
+	border: 10px solid rgba(255, 255, 255, .5);
+	border-radius: 5px;
+}
+
+.box.moving-piece-bg {
+	background: -webkit-linear-gradient(left, #EB3535 0%, #4285F4 100%);
+	background: -o-linear-gradient(left, #EB3535 0%, #4285F4 100%);
+	background: linear-gradient(to right, #EB3535 0%, #4285F4 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-size: 150px 100px;
+	background-repeat: no-repeat;
+	animation: animateBlockEffect 5s linear infinite;
+}
+.box.moving-piece-bg.torch {
+	display: inline-block;
+	background: -webkit-linear-gradient(left, rgba(235, 53, 53, 0) 0%, #4285F4 40%, #4285F4 60%, rgba(66, 133, 244, 0) 100%);
+	background: -o-linear-gradient(left, rgba(235, 53, 53, 0) 0%, #4285F4 40%, #4285F4 60%, rgba(66, 133, 244, 0) 100%);
+	background: linear-gradient(to right, rgba(235, 53, 53, 0) 0%, #4285F4 40%, #4285F4 60%, rgba(66, 133, 244, 0) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-size: 200px 100px;
+	background-repeat: no-repeat;
+	-webkit-animation: animateBlockEffect 5s linear infinite;
+	animation: animateBlockEffect 5s linear infinite;
+}
+@keyframes animateBlockEffect {
+	0% {
+		background-position: -25%;
+	}
+	100% {
+		background-position: 115%;
+	}
+}
+@-webkit-keyframes animateBlockEffect {
+	0% {
+		background-position: -25%;
+	}
+	100% {
+		-webkit-background-position: 115%;
+	}
+}
+
+.box.gradient-img {
+	display: inline-block;
+	background: url('../2.jpg');
+	background-position: center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent; 
+}
+
+.box.gradient-img.smoke {
+	display: inline-block;
+	background: url('../1.png');
+	background-position: center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-size: 200px;
+	background-position: 0;
+	background-repeat: no-repeat;
+	-webkit-animation: animateBlockEffect 5s linear infinite;
+	animation: animateBlockEffect 5s linear infinite;
+}
+
+.box.animate {
+	animation: animateBg 5s linear infinite;	
+}
+
+@media(max-width: 768px) {
+	.title {
+		font-size: 30px;
+	}
+	.box.moving-piece-bg, .box.moving-piece-bg.torch {
+		background-size: 50px 100%;
+	}
+}
