@@ -1,4 +1,4 @@
-# text-animation-effects-with-background-and-gradient-using-background-clip
+# Background Text Effects/Animation with Background and Gradient usign Background Clip
 Text Effects using Background clip property with Background and Gradient
 
 
