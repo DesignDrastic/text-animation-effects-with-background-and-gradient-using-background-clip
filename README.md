@@ -6,7 +6,7 @@ Text Effects using Background clip property with Background and Gradient
 
 <a href="https://designdrastic.com/post/demo/text-animation-and-background-gradient-effects-in-css"><strong>View Demo</strong></a>
 
-![Demo](/1560151130-AboutME-tiny.png)
+![Demo](/text-animation-and-background-gradient-effects-in-css.gif)
 
 # Terms of Use
 
